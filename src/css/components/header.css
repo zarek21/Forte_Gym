@@ -103,9 +103,9 @@
   visibility: visible;
 }
 
-.header--nav-open .header__mobile-icon[name="menu-outline"] {
+.header--nav-open .header-mobile-icon[name="menu-outline"] {
   display: none;
 }
-.header--nav-open .header__mobile-icon[name="close-outline"] {
+.header--nav-open .header-mobile-icon[name="close-outline"] {
   display: block;
 }
