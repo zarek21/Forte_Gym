@@ -33,6 +33,10 @@
   margin-bottom: 4.8rem;
 }
 
+.hero-text-box a {
+  font-size: 1.6rem;
+}
+
 .hero-img-box {
   position: absolute;
   top: 0;
@@ -55,5 +59,5 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }

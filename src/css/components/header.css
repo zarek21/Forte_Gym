@@ -8,6 +8,7 @@
   padding: 1.2rem 2.4rem;
   position: relative;
   border-bottom: 1px solid var(--color-brand-primary);
+  z-index: 9999;
 }
 
 .header-logo-link {
