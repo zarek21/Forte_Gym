@@ -1,0 +1,31 @@
+/* MAIN CSS */
+
+:root {
+  /* Paleta de Colores */
+  --color-brand-primary: #f03e3e;
+  --color-brand-secondary: #212529;
+  --color-dark: #000;
+  --color-light: #f1f3f5;
+  --color-text: #e9ecef;
+  --color-text-light: #ffe3e3;
+
+  /* Tipografía */
+  /* Al final escojo la tipografia */
+  /* --font-primary: "Bebas Neue", sans-serif; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  color: var(--color-text);
+  line-height: 1.6;
+}

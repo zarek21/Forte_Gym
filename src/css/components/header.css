@@ -1,0 +1,112 @@
+/* HEADER COMPONENT */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-brand-secondary);
+  padding: 1.2rem 2.4rem;
+  position: relative;
+}
+
+.header-logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-svg {
+  width: 15rem;
+  height: auto;
+}
+
+.header-logo-svg .wordmark {
+  font-family: var(--font-primary);
+  fill: var(--color-light);
+  letter-spacing: 1px;
+}
+
+.header-logo-svg .sub {
+  font-family: var(--font-primary);
+  fill: #aaa;
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+}
+
+.header-mobile-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 9999;
+  padding: 1rem;
+  margin: -1rem;
+}
+
+.header-mobile-icon {
+  height: 2.8rem;
+  width: 2.8rem;
+  color: var(--color-light);
+}
+
+.header-mobile-icon[name="close-outline"] {
+  display: none;
+}
+
+/* Navegación principal */
+
+.header-nav {
+  background-color: rgba(33, 37, 41, 0.98);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+
+  /* Oculto por defecto de forma accesible */
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.header-nav-link:link,
+.header-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-light);
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.header__nav-link--cta:link,
+.header__nav-link--cta:visited {
+  background-color: var(--color-brand-primary);
+  color: var(--color-dark);
+  padding: 1.2rem 2.4rem;
+  border-radius: 8px;
+}
+
+/* ---- ESTADO ABIERTO (CONTROLADO CON JS) ---- */
+
+.header--nav-open .header-nav {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.header--nav-open .header__mobile-icon[name="menu-outline"] {
+  display: none;
+}
+.header--nav-open .header__mobile-icon[name="close-outline"] {
+  display: block;
+}

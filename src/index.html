@@ -1,0 +1,111 @@
+<!-- src/index.html -->
+<!DOCTYPE html>
+
+<html lang="es">
+  <!-- HEAD -->
+  <head>
+    <!-- META DATA -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- HEAD-TITLE -->
+    <title>Forte Gym - Tu Mejor Versión</title>
+
+    <!-- Global Styles (variables, resets, etc.) -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Component Styles -->
+    <link rel="stylesheet" href="css/components/header.css" />
+  </head>
+
+  <!-- BODY -->
+  <body>
+    <header class="header">
+      <!-- LOGO-HEADER -->
+      <a
+        href="index.html"
+        class="header-logo-link"
+        aria-label="Forte Gym - Ir a la página de inicio"
+      >
+        <!-- SVG limpiado y con elementos de accesibilidad -->
+        <svg
+          class="header-logo-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 440 110"
+          role="img"
+          aria-labelledby="logoTitle logoDesc"
+        >
+          <title id="logoTitle">Logo de Forte Gym</title>
+          <desc id="logoDesc">
+            Una pesa rusa estilizada junto al texto Forte Gym.
+          </desc>
+          <defs>
+            <linearGradient id="retroGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="var(--color-brand-primary)" />
+              <stop offset="1" stop-color="var(--color-brand-secondary)" />
+            </linearGradient>
+          </defs>
+          <g transform="translate(15,15)">
+            <circle cx="40" cy="40" r="40" fill="url(#retroGrad)" />
+            <rect x="8" y="36" width="64" height="8" rx="4" fill="#fff" />
+            <rect x="-4" y="26" width="14" height="28" rx="3" fill="#fff" />
+            <rect x="70" y="26" width="14" height="28" rx="3" fill="#fff" />
+          </g>
+          <g transform="translate(120,38)">
+            <text class="wordmark" font-size="48">FORTE</text>
+            <text class="sub" y="44">GYM</text>
+          </g>
+        </svg>
+      </a>
+
+      <!-- HAMBURGUER BUTTON FOR MOBILE NAV -->
+      <button
+        class="header-mobile-icon"
+        aria-label="open navegation menu"
+        aria-controls="main-nav"
+        aria-expanded="false"
+      >
+        <ion-icon
+          class="header-mobile-icon"
+          name="menu-outline"
+          aria-hidden="true"
+        ></ion-icon>
+        <ion-icon
+          class="header-mobile-icon"
+          name="close-outline"
+          aria-hidden="true"
+        ></ion-icon>
+      </button>
+
+      <!-- NAVIGATION MENU -->
+      <nav class="main-nav" id="main-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#services"></a>Services
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#facilities"></a>Facilities
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#schedule"></a>Schedule
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link header-nav-link--cta" href="#contact"></a
+            >Trial Class
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- JS RESOURCES -->
+    <script src="/src/js/main.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
