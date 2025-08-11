@@ -28,3 +28,22 @@ body {
   font-family: sans-serif;
   line-height: 1.6;
 }
+
+/* ---- COMPONENTES GLOBALES / UTILIDADES ---- */
+.btn {
+  display: inline-block; /* Importante para que padding/margin funcione bien */
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--color-light);
+  background-color: var(--color-brand-primary);
+  padding: 1.2rem 2.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* Mejora de Accesibilidad: Estilo de foco para navegación con teclado */
+.btn:focus-visible {
+  outline: 3px solid var(--color-brand-secondary);
+  box-shadow: 0 0 0 5px var(--color-brand-primary);
+}

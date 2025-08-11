@@ -17,7 +17,6 @@
     <!-- Component Styles -->
     <link rel="stylesheet" href="css/components/header.css" />
     <link rel="stylesheet" href="css/components/hero.css" />
-    <link rel="stylesheet" href="css/components/reusables.css" />
   </head>
 
   <!-- BODY -->
@@ -101,13 +100,50 @@
 
     <main>
       <section class="section-hero">
-        <div class="hero-content">
-          <h1 class="heading-hero">Construye tu mejor versión</h1>
+        <!-- TEXT CONTENT -->
+        <div class="hero-text-box">
+          <h1 class="heading-hero">Transforma tu fuerza</h1>
           <p class="description-hero">
-            Entrena con nosotros y logra tus metas entrenando con el mejor
-            equipo y personal
+            Entrena con nosotros y logra tus metas, el mejor equipo, la mejor
+            comunidad, tu mejor versión.
           </p>
-          <a class="hero-cta btn" href="#contact">Clase de Prueba</a>
+          <a class="btn" href="#contact">Clase de Prueba Gratis</a>
+        </div>
+
+        <!-- IMAGE CONTENT -->
+        <div class="hero-img-box">
+          <picture>
+            <!-- webp format -->
+            <source
+              type="image/webp"
+              sizes="100vw"
+              srcset="
+                assets/images/gym-480.webp   480w,
+                assets/images/gym-800.webp   800w,
+                assets/images/gym-1600.webp 1600w,
+                assets/images/gym-2400.webp 2400w
+              "
+            />
+
+            <!-- jpg format -->
+            <source
+              type="image/jpeg"
+              sizes="100vw"
+              srcset="
+                assets/images/gym-480.jpg   480w,
+                assets/images/gym-800.jpg   800w,
+                assets/images/gym-1600.jpg 1600w,
+                assets/images/gym-2400.jpg 2400w
+              "
+            />
+
+            <!-- Old browsers -->
+            <img
+              src="assets/images/gym-800.jpg"
+              alt="Instalaciones modernas del gimnasio Forte Gym con equipamiento de última generación."
+              class="hero-img"
+            />
+          </picture>
         </div>
       </section>
     </main>
