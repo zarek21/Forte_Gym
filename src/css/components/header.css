@@ -7,7 +7,7 @@
   background-color: var(--color-dark);
   padding: 1.2rem 2.4rem;
   position: relative;
-  box-shadow: 0 0.5px 1.6px var(--color-brand-primary);
+  border-bottom: 1px solid var(--color-brand-primary);
 }
 
 .header-logo-link {
