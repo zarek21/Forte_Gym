@@ -1,13 +1,41 @@
 /* HERO SECTION */
 
 .section-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/src/assets/images/gym-800.webp);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 16.4rem 1.6rem;
 }
 
 .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .heading-hero {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--color-light);
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .description-hero {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #eeee;
+  margin-top: 1.2rem;
+  line-height: 1.6;
+}
+
+.hero-cta {
+  margin-top: 4.8rem;
+  color: var(--color-light);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
