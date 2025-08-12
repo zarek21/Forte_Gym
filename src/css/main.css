@@ -47,3 +47,12 @@ body {
   outline: 3px solid var(--color-brand-secondary);
   box-shadow: 0 0 0 5px var(--color-brand-primary);
 }
+
+.container {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.margin-bottom {
+  margin-bottom: 2.4rem;
+}
