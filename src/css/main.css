@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   line-height: 1.6;
 }
 
@@ -33,8 +33,7 @@ body {
 .btn {
   display: inline-block; /* Importante para que padding/margin funcione bien */
   text-decoration: none;
-  font-weight: 700;
-  color: var(--color-light);
+  color: rgb(222, 226, 230);
   background-color: var(--color-brand-primary);
   padding: 1.2rem 2.4rem;
   border-radius: 8px;
@@ -53,6 +52,49 @@ body {
   margin: 0 auto;
 }
 
-.margin-bottom {
-  margin-bottom: 2.4rem;
+/* MARGIN BOTTOM */
+.margin-bottom-sm {
+  margin-bottom: 1.2rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 2.4rem !important;
+}
+.margin-bottom-lg {
+  margin-bottom: 4.8rem !important;
+}
+
+/* ---- TITULARES GLOBALES ---- */
+.heading-secondary {
+  font-size: 3.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 6.4rem;
+  color: #adb5bd;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading-secondary strong {
+  color: var(--color-brand-primary);
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--color-brand-primary);
+  letter-spacing: 2px;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* Sub-título para secciones */
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ff6b6b;
+  text-transform: uppercase;
+  margin-top: 3.2rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: 2px;
 }
