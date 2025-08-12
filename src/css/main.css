@@ -87,6 +87,7 @@ body {
 .heading-tertiary {
   font-size: 2.4rem;
   margin-bottom: 1.6rem;
+  letter-spacing: 3px;
 }
 
 /* Sub-título para secciones */
