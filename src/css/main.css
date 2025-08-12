@@ -3,11 +3,11 @@
 :root {
   /* Paleta de Colores */
   --color-brand-primary: #f03e3e;
-  --color-brand-secondary: #212529;
+  --color-brand-secondary: #111;
   --color-dark: #000;
-  --color-text-light: #ffe3e3;
-  --color-light: #f1f3f5;
-  --color-text: #e9ecef;
+  --color-text-light: rgb(173, 181, 189);
+  --color-light: rgb(222, 226, 230);
+  --color-text: rgb(222, 226, 230);
 
   /* Tipografía */
   /* Al final escojo la tipografia */
@@ -48,8 +48,9 @@ body {
 }
 
 .container {
-  max-width: 30rem;
+  max-width: 120rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 /* MARGIN BOTTOM */
@@ -64,27 +65,28 @@ body {
 }
 
 /* ---- TITULARES GLOBALES ---- */
-.heading-secondary {
-  font-size: 3.6rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-bottom: 6.4rem;
-  color: #adb5bd;
-  text-align: center;
+.heading-secondary,
+.heading-tertiary {
+  /* Combinamos reglas que comparten para no repetir código */
+  color: var(--color-brand-primary);
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.heading-secondary strong {
-  color: var(--color-brand-primary);
+.heading-secondary {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem; /* Aumentamos el espacio debajo del título principal de sección */
+  text-align: center;
+}
+.heading-secondary span {
+  /* Usamos span para los cambios de color */
+  color: #adb5bd;
 }
 
 .heading-tertiary {
   font-size: 2.4rem;
-  font-weight: 500;
-  color: var(--color-brand-primary);
-  letter-spacing: 2px;
-  margin-bottom: 0.8rem;
-  text-transform: uppercase;
+  margin-bottom: 1.6rem;
 }
 
 /* Sub-título para secciones */
