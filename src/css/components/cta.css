@@ -1,0 +1,34 @@
+.section-cta {
+  padding: 9.6rem 0;
+  background-color: var(--color-brand-secondary);
+}
+
+.cta-box {
+  /* Usamos nuestra variable global */
+  background-image: var(--gradient-cta);
+  padding: 3.2rem;
+  border-radius: 11px;
+  text-align: center; /* Centramos todo el contenido para un look más cohesivo */
+}
+
+.section-cta h2 {
+  font-size: 4rem; /* Un poco más pequeño para mobile */
+  margin-bottom: 3.2rem;
+}
+
+.cta-img {
+  width: 100%;
+  max-width: 40rem; /* Evitamos que la imagen sea excesivamente grande en el futuro */
+  margin: 0 auto; /* Centramos la imagen */
+  display: block;
+  border-radius: 11px;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem; /* Tamaño más legible para párrafos */
+  color: var(--color-text-light);
+  line-height: 1.8;
+  max-width: 50ch; /* Limita la longitud de línea para mejor legibilidad */
+  margin: 0 auto 3.2rem auto;
+}

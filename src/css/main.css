@@ -9,6 +9,7 @@
   --color-light: rgb(222, 226, 230);
   --color-text: rgb(222, 226, 230);
   --color-rating: #fcc419;
+  --gradient-cta: linear-gradient(to bottom, #2d0c0c, #601919);
 
   /* Tipografía */
   /* Al final escojo la tipografia */
@@ -32,7 +33,7 @@ body {
 
 /* ---- COMPONENTES GLOBALES / UTILIDADES ---- */
 .btn {
-  display: inline-block; /* Importante para que padding/margin funcione bien */
+  display: inline-block;
   text-decoration: none;
   color: rgb(222, 226, 230);
   background-color: var(--color-brand-primary);
@@ -43,10 +44,21 @@ body {
   font-size: 2.4rem;
 }
 
-/* Mejora de Accesibilidad: Estilo de foco para navegación con teclado */
 .btn:focus-visible {
   outline: 3px solid var(--color-brand-secondary);
   box-shadow: 0 0 0 5px var(--color-brand-primary);
+}
+
+/* Modificador para botones con fondo oscuro */
+.btn--dark {
+  background-color: var(--color-brand-secondary);
+  color: var(--color-light);
+}
+
+.btn--dark:hover,
+.btn--dark:focus-visible {
+  background-color: #000;
+  color: var(--color-light);
 }
 
 .container {
