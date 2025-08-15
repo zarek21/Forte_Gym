@@ -90,5 +90,9 @@
   color: var(--color-light);
   font-size: 1.6rem;
   padding: 0.8rem 6rem;
-  text-transform: uppercase;
+}
+
+.btn--featured {
+  background-color: var(--color-light); /* O el color que prefieras */
+  color: var(--color-brand-primary);
 }
