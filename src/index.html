@@ -443,56 +443,78 @@
           <h2 class="heading-secondary">
             No solo <span> nosotros </span> lo decimos
           </h2>
+
           <div class="testimonials-grid">
-            <div class="testimonial-image-container">
+            <!-- TESTIMONIAL 1 (Componente reutilizable) -->
+            <article class="testimonial">
               <img
                 class="testimonial-img"
                 src="/src/assets/images/gym-face-1.jpg"
-                alt=""
+                alt="Foto de perfil de Mark Gringberg, cliente satisfecho."
               />
-            </div>
-            <div class="rating-container">
-              <svg
-                class="rating-star rate"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use href="#icon-star"></use>
-              </svg>
-              <svg
-                class="rating-star rate"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use href="#icon-star"></use>
-              </svg>
-              <svg
-                class="rating-star rate"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use href="#icon-star"></use>
-              </svg>
-              <svg
-                class="rating-star rate"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use href="#icon-star"></use>
-              </svg>
-              <svg class="rating-star" aria-hidden="true" focusable="false">
-                <use href="#icon-star"></use>
-              </svg>
-            </div>
-            <div class="testimonial-text-container">
-              <blockquote>
-                <p class="testimonial-description">
-                  " Es el <span> mejor gimnasio</span> en el que he estado, la
-                  atmosfera y la calidad de trabajadores es inigualable "
-                </p>
-              </blockquote>
-              <cite class="testimonial-author">Mark Gringberg</cite>
-            </div>
+              <div class="testimonial-content">
+                <div class="testimonial-rating">
+                  <svg class="rating-star" aria-hidden="true" focusable="false">
+                    <use href="#icon-star"></use>
+                  </svg>
+                  <svg class="rating-star" aria-hidden="true" focusable="false">
+                    <use href="#icon-star"></use>
+                  </svg>
+                  <svg class="rating-star" aria-hidden="true" focusable="false">
+                    <use href="#icon-star"></use>
+                  </svg>
+                  <svg class="rating-star" aria-hidden="true" focusable="false">
+                    <use href="#icon-star"></use>
+                  </svg>
+                  <svg class="rating-star" aria-hidden="true" focusable="false">
+                    <use href="#icon-star"></use>
+                  </svg>
+                </div>
+                <blockquote>
+                  <p class="testimonial-description">
+                    "Es el <span>mejor gimnasio</span> en el que he estado, la
+                    atmósfera y la calidad de trabajadores es inigualable."
+                  </p>
+                </blockquote>
+                <cite class="testimonial-author">&mdash; Mark Gringberg</cite>
+              </div>
+            </article>
+
+            <!-- TESTIMONIAL 2 (Simplemente copia y pega el article anterior y cambia el contenido) -->
+            <article class="testimonial">
+              <img
+                class="testimonial-img"
+                src="/src/assets/images/gym-face-2.jpg"
+                alt="Foto de perfil de Ana Ruíz, clienta satisfecha."
+              />
+              <div class="testimonial-content">
+                <div class="testimonial-rating">
+                  <svg class="rating-star" aria-hidden="true" focusable="false">
+                    <use href="#icon-star"></use>
+                  </svg>
+                  <svg class="rating-star" aria-hidden="true" focusable="false">
+                    <use href="#icon-star"></use>
+                  </svg>
+                  <svg class="rating-star" aria-hidden="true" focusable="false">
+                    <use href="#icon-star"></use>
+                  </svg>
+                  <svg class="rating-star" aria-hidden="true" focusable="false">
+                    <use href="#icon-star"></use>
+                  </svg>
+                  <svg class="rating-star" aria-hidden="true" focusable="false">
+                    <use href="#icon-star"></use>
+                  </svg>
+                </div>
+                <blockquote>
+                  <p class="testimonial-description">
+                    "Los <span> entrenadores personales </span>realmente se
+                    preocupan por tu progreso. ¡He logrado metas que creía
+                    imposibles!"
+                  </p>
+                </blockquote>
+                <cite class="testimonial-author">&mdash; Ana Ruíz</cite>
+              </div>
+            </article>
           </div>
         </div>
       </section>

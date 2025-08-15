@@ -1,44 +1,54 @@
+/* TESTIMONIALS SECTION */
+
 .section-testimonials {
   padding: 9.6rem 0;
-  background-color: #111;
+  background-color: var(--color-brand-secondary);
 }
 
 .testimonials-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3.2rem;
+  gap: 4.8rem; /* Espacio entre testimonios */
+}
+
+.testimonial {
+  border: 1px solid #333;
+  border-radius: 11px;
+  overflow: hidden; /* Clave para que la imagen no se salga de los bordes redondeados */
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonial-img {
   width: 100%;
   height: auto;
-  border-radius: 11px;
+  /* La imagen ya no necesita posicionamiento absoluto. Fluye naturalmente. */
 }
 
-.testimonial-text-container {
+.testimonial-content {
+  padding: 2.4rem;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
 }
 
-.rating-container {
-  text-align: center;
+.testimonial-rating {
+  display: flex;
+  gap: 0.4rem;
 }
 
 .rating-star {
   width: 2.4rem;
   height: 2.4rem;
-  color: white;
-}
-
-.rate {
-  color: yellow;
+  color: var(--color-rating); /* Usamos nuestra nueva variable */
 }
 
 .testimonial-description {
   font-style: italic;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: var(--color-text);
+  line-height: 1.7;
+  letter-spacing: 1px;
 }
 
 .testimonial-description span {
