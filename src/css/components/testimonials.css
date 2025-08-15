@@ -8,21 +8,19 @@
 .testimonials-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 4.8rem; /* Espacio entre testimonios */
+  gap: 4.8rem;
 }
 
 .testimonial {
   border: 1px solid #333;
   border-radius: 11px;
-  overflow: hidden; /* Clave para que la imagen no se salga de los bordes redondeados */
-  display: flex;
+  overflow: hidden;
   flex-direction: column;
 }
 
 .testimonial-img {
   width: 100%;
   height: auto;
-  /* La imagen ya no necesita posicionamiento absoluto. Fluye naturalmente. */
 }
 
 .testimonial-content {
@@ -40,7 +38,7 @@
 .rating-star {
   width: 2.4rem;
   height: 2.4rem;
-  color: var(--color-rating); /* Usamos nuestra nueva variable */
+  color: var(--color-rating);
 }
 
 .testimonial-description {
