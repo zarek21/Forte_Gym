@@ -27,10 +27,28 @@
     <link rel="stylesheet" href="css/components/hero.css" />
     <link rel="stylesheet" href="css/components/features.css" />
     <link rel="stylesheet" href="css/components/pricing.css" />
+    <link rel="stylesheet" href="css/components/testimonials.css" />
   </head>
 
   <!-- BODY -->
   <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <!-- ICONO CHECK REUTILIZABLE -->
+      <symbol id="icon-check" viewBox="0 0 32 32">
+        <path
+          d="M16 0c-8.836 0-16 7.163-16 16s7.163 16 16 16c8.837 0 16-7.163 16-16s-7.163-16-16-16zm0 30.032c-7.72 0-14-6.312-14-14.032s6.28-14 14-14 14 6.28 14 14-6.28 14.032-14 14.032zm6.386-19.886l-9.388 9.446-4.228-4.227c-0.39-0.39-1.024-0.39-1.415 0s-0.391 1.023 0 1.414l4.95 4.95c0.39 0.39 1.024 0.39 1.415 0 0.045-0.045 0.084-0.094 0.119-0.145l9.962-10.024c0.39-0.39 0.39-1.024 0-1.415s-1.024-0.39-1.415 0z"
+        />
+      </symbol>
+
+      <!--  Icono de Estrella -->
+      <symbol id="icon-star" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+        />
+      </symbol>
+    </svg>
+
     <header class="header">
       <!-- LOGO-HEADER -->
       <a
@@ -291,15 +309,6 @@
         </div>
       </section>
 
-      <!-- ICONO CHECK REUTILIZABLE -->
-      <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-        <symbol id="icon-check" viewBox="0 0 32 32">
-          <path
-            d="M16 0c-8.836 0-16 7.163-16 16s7.163 16 16 16c8.837 0 16-7.163 16-16s-7.163-16-16-16zm0 30.032c-7.72 0-14-6.312-14-14.032s6.28-14 14-14 14 6.28 14 14-6.28 14.032-14 14.032zm6.386-19.886l-9.388 9.446-4.228-4.227c-0.39-0.39-1.024-0.39-1.415 0s-0.391 1.023 0 1.414l4.95 4.95c0.39 0.39 1.024 0.39 1.415 0 0.045-0.045 0.084-0.094 0.119-0.145l9.962-10.024c0.39-0.39 0.39-1.024 0-1.415s-1.024-0.39-1.415 0z"
-          />
-        </symbol>
-      </svg>
-
       <!-- PRICING SECTION -->
       <section class="section-pricing" id="pricing">
         <div class="container">
@@ -381,6 +390,7 @@
                 <a href="#" class="btn btn--featured">Empezar ahora</a>
               </div>
             </article>
+
             <!-- PLAN 3: PREMIUM -->
             <article class="pricing-plan">
               <header class="pricing-plan-header">
@@ -423,6 +433,66 @@
                 <a href="#" class="btn .btn--featured">Empezar ahora</a>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS SECTION -->
+      <section class="section-testimonials" id="testimonials">
+        <div class="container">
+          <h2 class="heading-secondary">
+            No solo <span> nosotros </span> lo decimos
+          </h2>
+          <div class="testimonials-grid">
+            <div class="testimonial-image-container">
+              <img
+                class="testimonial-img"
+                src="/src/assets/images/gym-face-1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="rating-container">
+              <svg
+                class="rating-star rate"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use href="#icon-star"></use>
+              </svg>
+              <svg
+                class="rating-star rate"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use href="#icon-star"></use>
+              </svg>
+              <svg
+                class="rating-star rate"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use href="#icon-star"></use>
+              </svg>
+              <svg
+                class="rating-star rate"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use href="#icon-star"></use>
+              </svg>
+              <svg class="rating-star" aria-hidden="true" focusable="false">
+                <use href="#icon-star"></use>
+              </svg>
+            </div>
+            <div class="testimonial-text-container">
+              <blockquote>
+                <p class="testimonial-description">
+                  " Es el <span> mejor gimnasio</span> en el que he estado, la
+                  atmosfera y la calidad de trabajadores es inigualable "
+                </p>
+              </blockquote>
+              <cite class="testimonial-author">Mark Gringberg</cite>
+            </div>
           </div>
         </div>
       </section>
