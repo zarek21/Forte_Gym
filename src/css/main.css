@@ -39,6 +39,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s;
+  font-size: 2.4rem;
 }
 
 /* Mejora de Accesibilidad: Estilo de foco para navegación con teclado */
@@ -74,7 +75,7 @@ body {
 }
 
 .heading-secondary {
-  font-size: 3.6rem;
+  font-size: 6.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem; /* Aumentamos el espacio debajo del título principal de sección */
   text-align: center;

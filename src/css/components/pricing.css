@@ -1,0 +1,98 @@
+/* PRICING SECTION */
+
+.section-pricing {
+  background-color: var(--color-brand-secondary);
+  padding: 9.6rem 0;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4.8rem; /* Espaciado uniforme entre tarjetas */
+}
+
+.pricing-plan {
+  border: 1px solid #333;
+  border-radius: 11px;
+  padding: 3.2rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.pricing-plan-header {
+  margin-bottom: 3.2rem;
+}
+
+.pricing-plan-name {
+  color: var(--color-brand-primary);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.pricing-plan-price {
+  font-size: 4.4rem;
+  font-weight: 700;
+  color: var(--color-light);
+  margin-bottom: 1.6rem;
+}
+
+.pricing-plan-price span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-text-light);
+}
+
+.pricing-plan-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-align: left; /* Alineamos el texto de las features a la izquierda */
+  margin-bottom: 4.8rem;
+}
+
+.plan-feature {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  color: var(--color-text);
+  font-size: 1.8rem;
+}
+
+.pricing-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: var(--color-brand-primary);
+}
+
+.pricing-plan-footer {
+  margin-top: auto; /* Empuja el footer con el botón hacia abajo */
+}
+
+/* --- Estilo del Plan Destacado --- */
+.pricing-plan.is-featured {
+  background-color: #000;
+  transform: scale(1.05); /* Lo hace un poco más grande */
+  position: relative;
+  overflow: hidden; /* Necesario para el banner */
+}
+
+.pricing-plan.is-featured::after {
+  content: "Recomendado";
+  position: absolute;
+  top: 2.5rem;
+  right: -5rem;
+  transform: rotate(45deg);
+  background-color: var(--color-brand-primary);
+  color: var(--color-light);
+  font-size: 1.6rem;
+  padding: 0.8rem 6rem;
+}
+
+.btn--featured {
+  background-color: var(--color-light); /* O el color que prefieras */
+  color: var(--color-brand-primary);
+}
