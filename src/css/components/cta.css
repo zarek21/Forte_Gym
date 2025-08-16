@@ -32,3 +32,29 @@
   max-width: 50ch; /* Limita la longitud de línea para mejor legibilidad */
   margin: 0 auto 3.2rem auto;
 }
+
+.section-cta .btn {
+  margin-bottom: 3.2rem;
+}
+
+/* ======================================= */
+/* BREAKPOINT: DESKTOP (1200px) */
+/* ======================================= */
+@media (min-width: 75em) {
+  .cta-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-text-box {
+    align-self: center;
+  }
+
+  .section-cta h2 {
+    font-size: 6.4rem;
+  }
+
+  .cta-text {
+    font-size: 2.4rem;
+  }
+}
