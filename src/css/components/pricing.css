@@ -96,3 +96,16 @@
   background-color: var(--color-light); /* O el color que prefieras */
   color: var(--color-brand-primary);
 }
+
+/* ======================================= /
+/ BREAKPOINT: TABLET (720px) /
+/ ======================================= */
+
+@media (min-width: 45em) {
+}
+
+/* ======================================= */
+/* BREAKPOINT: DESKTOP (1200px) */
+/* ======================================= */
+@media (min-width: 75em) {
+}

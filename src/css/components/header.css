@@ -98,7 +98,7 @@
 /* BREAKPOINT: TABLET (768px) Y SUPERIOR */
 /* ======================================= */
 
-@media (min-width: 48em) {
+@media (min-width: 45em) {
   /* 1. Ocultar el botón de hamburguesa (¡Perfecto!) */
   .header-mobile-btn {
     display: none;
