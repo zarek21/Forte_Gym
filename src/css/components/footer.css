@@ -83,3 +83,29 @@
 .footer-nav a:active {
   color: var(--color-light);
 }
+
+/* ======================================= /
+/ BREAKPOINT: TABLET (720px) /
+/ ======================================= */
+
+@media (min-width: 45em) {
+  .grid--footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+    align-items: center;
+    gap: 8rem;
+  }
+
+  .footer-logo-col {
+    align-items: start;
+  }
+
+  .copyright-text {
+    font-size: 1.6rem;
+  }
+
+  .footer-nav {
+    flex-direction: row;
+  }
+}
