@@ -11,27 +11,9 @@
   z-index: 9999;
 }
 
-.header-logo-link {
-  display: flex;
-  align-items: center;
-}
-
-.header-logo-svg {
-  width: 15rem;
+.header-logo {
+  width: 10.4rem;
   height: auto;
-}
-
-.header-logo-svg .wordmark {
-  font-family: var(--font-primary);
-  fill: var(--color-light);
-  letter-spacing: 1px;
-}
-
-.header-logo-svg .sub {
-  font-family: var(--font-primary);
-  fill: #aaa;
-  font-size: 3.2rem;
-  letter-spacing: 2px;
 }
 
 .header-mobile-btn {
@@ -115,6 +97,7 @@
 /* ======================================= */
 /* BREAKPOINT: TABLET (768px) Y SUPERIOR */
 /* ======================================= */
+
 @media (min-width: 48em) {
   /* 1. Ocultar el botón de hamburguesa (¡Perfecto!) */
   .header-mobile-btn {
