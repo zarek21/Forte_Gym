@@ -111,3 +111,47 @@
 .header--nav-open .header-mobile-icon[name="close-outline"] {
   display: block;
 }
+
+/* ======================================= */
+/* BREAKPOINT: TABLET (768px) Y SUPERIOR */
+/* ======================================= */
+@media (min-width: 48em) {
+  /* 1. Ocultar el botón de hamburguesa (¡Perfecto!) */
+  .header-mobile-btn {
+    display: none;
+  }
+
+  /* 2. "Deshacer" la superposición del menú móvil */
+  .header-nav {
+    /* Hacemos que siempre sea visible y clickeable */
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+
+    /* Quitamos el posicionamiento absoluto que lo sacaba del flujo */
+    position: static;
+
+    /* Quitamos el alto que lo hacía ocupar toda la pantalla */
+    height: auto;
+
+    /* Quitamos el fondo oscuro de la superposición */
+    background-color: transparent;
+
+    /* Quitamos la transición, ya no es necesaria */
+    transition: none;
+  }
+
+  /* 3. Poner la lista de navegación en horizontal */
+  .header-nav-list {
+    /* El valor por defecto de flex-direction es 'row' */
+    flex-direction: row;
+    align-items: center;
+    gap: 2.4rem; /* Ajustamos el espacio entre elementos */
+  }
+
+  /* 4. Ajustes finos de los enlaces (opcional pero recomendado) */
+  .header-nav-link:link,
+  .header-nav-link:visited {
+    font-size: 1.8rem; /* Un tamaño de fuente más adecuado para escritorio */
+  }
+}
