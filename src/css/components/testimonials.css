@@ -58,3 +58,23 @@
   color: var(--color-text-light);
   font-style: normal;
 }
+
+/* ======================================= /
+/ BREAKPOINT: TABLET (720px) and superiors /
+/ ======================================= */
+
+@media (min-width: 45em) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-img {
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  /* 2. Hacemos que el contenido de texto ocupe el espacio sobrante */
+  .testimonial-content {
+    flex-grow: 1;
+  }
+}
