@@ -14,8 +14,8 @@
 
   /* 3. Aplicamos el efecto de fondo */
   background-color: rgba(17, 17, 17, 0.85);
-  backdrop-filter: blur(80px);
-  -webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .header-logo {
