@@ -29,6 +29,8 @@ html {
 body {
   font-family: "Bebas Neue", sans-serif;
   line-height: 1.6;
+  background-color: var(--color-brand-secondary);
+  color: var(--color-text);
 }
 
 /* ---- COMPONENTES GLOBALES / UTILIDADES ---- */
