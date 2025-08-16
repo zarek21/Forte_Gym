@@ -1,0 +1,13 @@
+/* FOOTER SECTION */
+
+.section-footer {
+  padding: 9.6rem 0;
+  background-color: var(--color-brand-secondary);
+  display: grid;
+  justify-content: start;
+  align-content: center;
+}
+
+.footer-image-box {
+  width: 15rem;
+}

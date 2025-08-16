@@ -115,3 +115,8 @@ body {
   margin-bottom: 1.6rem;
   letter-spacing: 2px;
 }
+
+.logo {
+  width: 100%;
+  height: auto;
+}
