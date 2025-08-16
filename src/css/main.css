@@ -3,7 +3,7 @@
 :root {
   /* Paleta de Colores */
   --color-brand-primary: #f03e3e;
-  --color-brand-secondary: #111;
+  --color-brand-secondary: #222;
   --color-dark: #000;
   --color-text-light: rgb(173, 181, 189);
   --color-light: rgb(222, 226, 230);
@@ -31,6 +31,34 @@ body {
   line-height: 1.6;
   background-color: var(--color-brand-secondary);
   color: var(--color-text);
+  position: relative;
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
+  /* Efecto de desenfoque y transparencia */
+  filter: blur(150px);
+  opacity: 1;
+}
+
+body::before {
+  background-color: var(--color-brand-primary); /* ¡Usando tu variable! */
+  width: 100vw;
+  height: 35rem;
+}
+
+/* Mancha de color inferior derecha (un color secundario sutil) */
+body::after {
+  background: linear-gradient(#601919, #180606); /* Un gris neutro */
+  width: 100vw;
+  height: 45rem;
+  bottom: -10rem;
 }
 
 /* ---- COMPONENTES GLOBALES / UTILIDADES ---- */

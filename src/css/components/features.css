@@ -2,7 +2,9 @@
 
 .section-features {
   padding: 9.6rem 0;
-  background-color: #111; /* Un fondo ligeramente distinto para separar */
+  background-color: var(
+    --color-brand-secondary
+  ); /* Un fondo ligeramente distinto para separar */
 }
 
 .features-grid {
@@ -21,7 +23,7 @@
 
 .feature-card:hover {
   transform: translateY(-1.2rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.05);
 }
 
 .feature-icon {
