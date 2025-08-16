@@ -1,0 +1,12 @@
+[build]
+  # Directorio que Netlify debe publicar.
+  # Le decimos que nuestro sitio vive dentro de la carpeta "src".
+  publish = "src"
+
+# Esta es una regla de "redirección" que soluciona el problema de las rutas.
+# Le dice a Netlify: "Si el navegador pide un archivo en /src/...,
+# sírvelo como si lo hubiera pedido sin /src/...".
+[[redirects]]
+  from = "/src/*"
+  to = "/:splat"
+  status = 200
