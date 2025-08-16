@@ -102,10 +102,24 @@
 / ======================================= */
 
 @media (min-width: 45em) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-plan:last-child {
+    grid-column: 1 / -1;
+  }
 }
 
 /* ======================================= */
 /* BREAKPOINT: DESKTOP (1200px) */
 /* ======================================= */
 @media (min-width: 75em) {
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pricing-plan:last-child {
+    grid-column: auto;
+  }
 }
