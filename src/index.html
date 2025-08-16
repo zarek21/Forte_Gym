@@ -544,23 +544,67 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="section-footer">
-      <div class="container">
-        <div class="footer-image-box">
-          <img
-            class="logo"
-            src="/src/assets/images/logo.png"
-            alt="logo de la marca"
-          />
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <!-- Columna 1: Logo y Redes Sociales -->
+        <div class="footer-logo-col">
+          <a href="#" class="footer-logo-link">
+            <img
+              class="footer-logo"
+              src="/src/assets/images/logo.png"
+              alt="Forte Gym - Volver al inicio"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a
+                class="social-link"
+                href="#"
+                aria-label="Visita nuestro Instagram"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link"
+                href="#"
+                aria-label="Visita nuestro Facebook"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link"
+                href="#"
+                aria-label="Visita nuestro perfil de youtube"
+              >
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="footer-text-box">
-          <p class="footer-description">
-            En forte gym valoramos tu privacidad y nunca compartiremos tú
-            información con terceros. Visita nuestras redes sociales para las
-            ultimas actualizaciones y más
+
+        <!-- Columna 2: Navegación (Opcional pero recomendado) -->
+        <div class="footer-nav-col">
+          <p class="footer-heading">Menú</p>
+          <ul class="footer-nav">
+            <li><a href="#features">Ventajas</a></li>
+            <li><a href="#pricing">Planes</a></li>
+            <li><a href="#testimonials">Testimonios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Copyright -->
+        <div class="footer-copyright-col">
+          <p class="copyright-text">
+            Copyright &copy; <span class="year">2025</span> por Forte Gym, Inc.
+            Todos los derechos reservados.
           </p>
         </div>
-        <div class="footer-icon-box"></div>
       </div>
     </footer>
 
