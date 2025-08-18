@@ -74,6 +74,13 @@ body::after {
   font-size: 2.4rem;
 }
 
+.btn:hover,
+.btn:active {
+  background-color: #601919;
+  transform: scale(1.1);
+  color: var(--color-light);
+}
+
 .btn:focus-visible {
   outline: 3px solid var(--color-brand-secondary);
   box-shadow: 0 0 0 5px var(--color-brand-primary);
